@@ -27,6 +27,25 @@ export const getAllPaintings = async () => {
   }
 };
 
+// live subscribe to collection
+export const getPaintingsSubscription = (callback) => {
+  const collectionRef = collection(db, "Paintings");
+
+  // onSnapshot:
+  // creates a listener listening to update of firestore collection
+  // returns unsubscribe function that can be called to cancel the snapshot listener.
+  const unsubscribeFn = onSnapshot(collectionRef, (snapshot) => {
+    // every time a new document added -> take a snapshot of what database look like at that time
+    const paintingData = snapshot.docs.map((doc) => ({
+      id: doc.id,
+      ...doc.data(),
+    }));
+    callback(paintingData);
+  });
+  return unsubscribeFn;
+};
+
+
 export const createPainting = async (data) => {
   try {
     const collectionRef = collection(db, "Paintings");
