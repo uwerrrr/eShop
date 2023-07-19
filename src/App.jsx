@@ -1,21 +1,30 @@
-import { useEffect, useState } from "react";
-import "./App.css";
+import "./App.scss";
 
-import { getAllPaintings } from "./services/paintings-service";
+import { useEffect, useState } from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
+import PaintingsContextProvider from "./context/PaintingsContext";
+
+import Header from "./components/Header/Header";
+import HomePage from "./pages/HomePage";
+import ProductPage from "./pages/ProductPage";
+import CartPage from "./pages/CartPage";
 
 function App() {
-  const [paintings, setPaintings] = useState([]);
-
-  useEffect(() => {
-    // get data from firestore
-    getAllPaintings().then((paintingData) => setPaintings(paintingData));
-  }, []);
-
-  console.log("paintings: ", paintings);
-
   return (
     <>
-      <p>abc </p>
+      <PaintingsContextProvider>
+        {/* { paintings, getPaintings } */}
+        <BrowserRouter>
+          <Header />
+
+          <Routes>
+            <Route path="/" element={<HomePage />} />
+            <Route path="/products/:id" element={<ProductPage />} />
+            <Route path="/cart" element={<CartPage />} />
+          </Routes>
+        </BrowserRouter>
+      </PaintingsContextProvider>
     </>
   );
 }
