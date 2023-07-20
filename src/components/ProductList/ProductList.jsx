@@ -1,3 +1,4 @@
+import style from "./ProductList.module.scss";
 import { useContext, useEffect, useState } from "react";
 
 import { PaintingsContext } from "../../context/PaintingsContext";
@@ -9,7 +10,7 @@ const ProductList = () => {
   console.log(paintings);
 
   return (
-    <div>
+    <div className={style.product_list}>
       <p>ProductList</p>
       {paintings.map((painting, index) => (
         <ProductCard key={index} painting={painting} />
