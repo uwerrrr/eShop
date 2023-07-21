@@ -1,4 +1,16 @@
+$headerHeight: 50px;
+
 .header {
+  max-height: $headerHeight;
+  display: flex;
+  justify-content: space-between;
+
+  margin-top: 10px;
+  margin-bottom: 30px;
 }
 .page_name {
+  margin: 0;
+}
+.brush_icon {
+  max-height: calc($headerHeight * 0.5);
 }

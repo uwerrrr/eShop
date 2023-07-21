@@ -45,7 +45,6 @@ export const getPaintingsSubscription = (callback) => {
   return unsubscribeFn;
 };
 
-
 export const createPainting = async (data) => {
   try {
     const collectionRef = collection(db, "Paintings");
@@ -84,3 +83,13 @@ export const getPaintingById = async (id) => {
 // paintings.forEach((painting) => {
 //   createPainting(painting);
 // });
+
+// let allPaintings;
+// getAllPaintings()
+//   .then((paintings) => {
+//     allPaintings = [...paintings];
+//     console.log(allPaintings);
+//   })
+//   .catch((err) => console.log(err));
+
+

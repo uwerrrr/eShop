@@ -1,0 +1,103 @@
+@use "../../../styleSet/theme.scss";
+
+$cardHeight: 450px;
+$cardWidth: 350px;
+
+.link_wrapper {
+  text-decoration: none;
+  color: theme.$textMain;
+  width: $cardWidth;
+  display: flex;
+}
+
+.card {
+  height: $cardHeight;
+  width: $cardWidth;
+
+  position: relative;
+}
+
+.background {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  border-radius: theme.$borderRadius;
+
+  &__img {
+    width: 100%;
+    height: 100%;
+
+    position: relative;
+
+    background-size: cover;
+    overflow: hidden;
+    background-position: center;
+    border-radius: theme.$borderRadius;
+
+    // add an overlay of black gradient on top
+    &::after {
+      content: "";
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      border-radius: theme.$borderRadius;
+      background-image: linear-gradient(
+        180deg,
+        transparent 0,
+        rgba(0, 0, 0, 0.45) 100%
+      );
+    }
+
+    .card:hover & {
+      transform: scale(1.2);
+      transition: all 0.4s ease-in-out;
+    }
+    .card:not(:hover) & {
+      transform: scale(1);
+      transition: all 0.4s ease-in-out;
+    }
+  }
+}
+
+.content_wrapper {
+  width: 100%;
+  height: 100%;
+
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+
+  box-sizing: border-box;
+  padding: 1.25rem;
+}
+
+.content {
+  width: 100%;
+  height: 100%;
+
+  color: theme.$textWhite;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: start;
+
+  text-align: left;
+  gap: 5px;
+
+  & > * {
+    margin: 5px 0;
+  }
+  &__name {
+    font-size: 26px;
+  }
+  &__painter {
+    font-size: 18px;
+  }
+  &__price {
+    font-size: 14px;
+    font-style: italic;
+  }
+}

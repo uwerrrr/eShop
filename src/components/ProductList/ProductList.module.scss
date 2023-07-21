@@ -1,0 +1,12 @@
+@use "../../styleSet/theme.scss";
+
+.product_list_wrapper {
+}
+.product_list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
+  & > * {
+  }
+}

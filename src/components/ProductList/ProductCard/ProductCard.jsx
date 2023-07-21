@@ -4,20 +4,26 @@ import { Link } from "react-router-dom";
 
 const ProductCard = ({ painting }) => {
   const { id, name, year, painter, imageURL, price } = painting;
+
   return (
-    <div className={style.card}>
-      <Link className={style.card_link} to={`products/${id}`}>
-        {/* /products/:id */}
-        <div className={style.card__head}>
-          <p>ProductCard</p>
-          <img src={imageURL} alt={name} className={style.card__img} />
+    <Link className={style.link_wrapper} to={`products/${id}`}>
+      <div className={style.card}>
+        <div className={style.background}>
+          <div
+            className={style.background__img}
+            style={{ backgroundImage: `url(${imageURL})` }}
+          />
         </div>
-        <div className={style.card__body}>
-          <h4 className={style.card__name}>{name}</h4>
-          {/* <h5 className={style.card__painter}>{painter}</h5> */}
+
+        <div className={style.content_wrapper}>
+          <div className={style.content}>
+            <h3 className={style.content__name}>{name}</h3>
+            <p className={style.content__painter}>{`${painter}`}</p>
+            <p className={style.content__price}>{`$ ${price}`}</p>
+          </div>
         </div>
-      </Link>
-    </div>
+      </div>
+    </Link>
   );
 };
 

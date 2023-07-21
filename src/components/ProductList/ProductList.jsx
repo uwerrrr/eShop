@@ -10,11 +10,12 @@ const ProductList = () => {
   console.log(paintings);
 
   return (
-    <div className={style.product_list}>
-      <p>ProductList</p>
-      {paintings.map((painting, index) => (
-        <ProductCard key={index} painting={painting} />
-      ))}
+    <div className={style.product_list_wrapper}>
+      <div className={style.product_list}>
+        {paintings.map((painting, index) => (
+          <ProductCard key={index} painting={painting} />
+        ))}
+      </div>
     </div>
   );
 };
