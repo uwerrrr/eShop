@@ -1,13 +1,11 @@
 import style from "./ProductList.module.scss";
+import { getAllProducts, getFavProducts } from "../../scripts/productsFilter";
 
 import ProductCard from "./ProductCard/ProductCard";
 
 const ProductList = ({ products, filter }) => {
-  const productsAll = [...products];
-
-  const productsFav = products.filter(
-    (product) => product["isFavorite"] === true
-  );
+  const productsAll = getAllProducts(products);
+  const productsFav = getFavProducts(products);
 
   return (
     <div className={style.product_list_wrapper}>

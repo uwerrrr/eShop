@@ -8,16 +8,9 @@ import Carousel from "../components/Carousel/Carousel";
 const HomePage = () => {
   const { paintings } = useContext(PaintingsContext);
 
-  // useEffect(() => {
-  //   // live monitor to collection database
-  //   // and set paintings state
-  //   const unsubFunc = getPaintingsSubscription(getPaintings);
-  //   return () => unsubFunc();
-  // }, []);
-
   return (
     <>
-      <Carousel />
+      <Carousel products={paintings} />
       <ProductList products={paintings} filter="all" />;
     </>
   );
