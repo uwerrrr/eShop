@@ -40,7 +40,7 @@ export const getPaintingsSubscription = (callback) => {
       id: doc.id,
       ...doc.data(),
     }));
-    
+
     callback(paintingData);
   });
   return unsubscribeFn;
@@ -80,8 +80,11 @@ export const getPaintingById = async (id) => {
 
 export const updatePaintingById = async (id, property, newVal) => {
   try {
-    const docRef = doc(db, "Paintings", id);
-    await docRef.update({ [property]: newVal });
+    console.log("id ", id);
+    console.log("property ", property);
+    console.log("newVal ", newVal);
+    const docRef = await doc(db, "Paintings", id);
+    const updatedDoc = await updateDoc(docRef, { [property]: newVal });
 
     console.log("Painting successfully updated!");
   } catch (err) {

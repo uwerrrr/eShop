@@ -21,18 +21,21 @@ const Product = ({ product }) => {
     isFavorite,
   } = painting;
 
-  const nameCap = name ? name.toUpperCase() : "a";
-  console.log(nameCap);
+  // name is undefined when first rendered
+  const nameCap = name ? name.toUpperCase() : "";
+  console.log("isFavorite: ", isFavorite);
 
-  const [love, setLove] = useState(null);
-
-  const toggleLove = () => {
-    love == false ? setLove(true) : setLove(false);
-  };
+  const [love, setLove] = useState(isFavorite);
 
   useEffect(() => {
     setLove(isFavorite);
   }, []);
+
+  const toggleLove = () => {
+    let currentLove = love; // setter function executed async so we need to set a curr variable for easier control
+    setLove(!currentLove);
+    updatePaintingById(id, "isFavorite", !currentLove);
+  };
 
   return (
     <section className={style.product_wrapper}>
@@ -49,7 +52,10 @@ const Product = ({ product }) => {
 
         <div className={style.content}>
           <div className={style.content__text}>
-            <h3 className={style.content__name}> {nameCap}</h3>
+            <h3 className={style.content__name}>
+              {" "}
+              {nameCap} <span className={style.content__year}>({year})</span>
+            </h3>
             <p className={style.content__painter}>{painter}</p>
             {love === true ? (
               <button

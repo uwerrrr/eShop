@@ -10,7 +10,7 @@ const ProductPage = () => {
   const [painting, setPainting] = useState({});
 
   const [errMess, setErrMess] = useState("");
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     setErrMess("");
@@ -22,11 +22,7 @@ const ProductPage = () => {
       .finally(() => setLoading(false));
   }, []);
 
-  return (
-    <>
-      <Product product={painting} />
-    </>
-  );
+  return <>{loading === false && <Product product={painting} />}</>;
 };
 
 export default ProductPage;

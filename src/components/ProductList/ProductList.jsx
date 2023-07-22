@@ -4,8 +4,8 @@ import ProductCard from "./ProductCard/ProductCard";
 
 const ProductList = ({ products, filter }) => {
   const productsAll = [...products];
-  
-  let productsFav = products.filter(
+
+  const productsFav = products.filter(
     (product) => product["isFavorite"] === true
   );
 
