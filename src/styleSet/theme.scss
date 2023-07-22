@@ -12,3 +12,21 @@ $textSub: $cinereous;
 $textWhite: $seaSalt;
 
 $borderRadius: 16px;
+
+// link
+@mixin linkWrapper() {
+  text-decoration: none;
+  color: $textMain;
+}
+
+// btn
+@mixin btnWrapper() {
+  background-color: transparent;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  outline: none;
+  padding: 0;
+  color: $textMain;
+}

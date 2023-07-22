@@ -40,6 +40,7 @@ export const getPaintingsSubscription = (callback) => {
       id: doc.id,
       ...doc.data(),
     }));
+    
     callback(paintingData);
   });
   return unsubscribeFn;
@@ -77,6 +78,17 @@ export const getPaintingById = async (id) => {
   }
 };
 
+export const updatePaintingById = async (id, property, newVal) => {
+  try {
+    const docRef = doc(db, "Paintings", id);
+    await docRef.update({ [property]: newVal });
+
+    console.log("Painting successfully updated!");
+  } catch (err) {
+    console.error("Error updating painting: ", err);
+  }
+};
+
 ///// add paintings data to firestore
 // import paintings from "../../resources/painting_data.json";
 
@@ -91,5 +103,3 @@ export const getPaintingById = async (id) => {
 //     console.log(allPaintings);
 //   })
 //   .catch((err) => console.log(err));
-
-

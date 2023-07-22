@@ -2,11 +2,15 @@ import style from "./ProductCard.module.scss";
 import { useContext, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
-const ProductCard = ({ painting }) => {
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCartPlus } from "@fortawesome/free-solid-svg-icons";
+
+const ProductCard = ({ product }) => {
+  const painting = { ...product };
   const { id, name, year, painter, imageURL, price } = painting;
 
   return (
-    <Link className={style.link_wrapper} to={`products/${id}`}>
+    <Link className={style.link_wrapper} to={`/products/${id}`}>
       <div className={style.card}>
         <div className={style.background}>
           <div
@@ -19,7 +23,16 @@ const ProductCard = ({ painting }) => {
           <div className={style.content}>
             <h3 className={style.content__name}>{name}</h3>
             <p className={style.content__painter}>{`${painter}`}</p>
-            <p className={style.content__price}>{`$ ${price}`}</p>
+
+            <div className={style.content__bottom}>
+              <p className={style.content__price}>{`$ ${price}`}</p>
+              {/* <button className={style.btn}>
+                <FontAwesomeIcon
+                  icon={faCartPlus}
+                  className={style.btn__icon}
+                />
+              </button> */}
+            </div>
           </div>
         </div>
       </div>

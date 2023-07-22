@@ -1,3 +1,5 @@
+@use "../../styleSet/theme.scss";
+
 $headerHeight: 50px;
 
 .header {
@@ -8,9 +10,14 @@ $headerHeight: 50px;
   margin-top: 10px;
   margin-bottom: 30px;
 }
+.link_wrapper {
+  @include theme.linkWrapper();
+}
+
 .page_name {
   margin: 0;
 }
 .brush_icon {
-  max-height: calc($headerHeight * 0.5);
+  // max-height: calc($headerHeight * 0.5);
+  color: theme.$vermilion;
 }

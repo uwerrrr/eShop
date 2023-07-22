@@ -1,20 +1,38 @@
 import style from "./ProductList.module.scss";
-import { useContext, useEffect, useState } from "react";
-
-import { PaintingsContext } from "../../context/PaintingsContext";
 
 import ProductCard from "./ProductCard/ProductCard";
 
-const ProductList = () => {
-  const { paintings } = useContext(PaintingsContext);
-  console.log(paintings);
+const ProductList = ({ products, filter }) => {
+  const productsAll = [...products];
+  
+  let productsFav = products.filter(
+    (product) => product["isFavorite"] === true
+  );
 
   return (
     <div className={style.product_list_wrapper}>
+      <h2 className={style.list_title}>
+        {filter === "all" && "All paintings"}
+        {filter === "favourites" && "Most favourite paintings"}
+      </h2>
       <div className={style.product_list}>
-        {paintings.map((painting, index) => (
-          <ProductCard key={index} painting={painting} />
-        ))}
+        {/* all */}
+        {filter === "all" &&
+          productsAll.map((product, index) => (
+            <ProductCard key={index} product={product} />
+          ))}
+
+        {/* favourites */}
+        {filter === "favourites" && productsFav.length > 0 ? (
+          productsFav.map((product, index) => (
+            <ProductCard key={index} product={product} />
+          ))
+        ) : (
+          <>
+            <p>There are no favourites</p>
+            <p>Please add some favourites</p>
+          </>
+        )}
       </div>
     </div>
   );
