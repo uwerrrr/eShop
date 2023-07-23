@@ -14,14 +14,11 @@ const ProductList = ({ products, filter }) => {
         {filter === "favourites" && "Most favourite paintings"}
       </h2>
       <div className={style.product_list}>
-        {/* all */}
-        {filter === "all" &&
+        {filter === "all" ? (
           productsAll.map((product, index) => (
             <ProductCard key={index} product={product} />
-          ))}
-
-        {/* favourites */}
-        {filter === "favourites" && productsFav.length > 0 ? (
+          ))
+        ) : filter === "favourites" && productsFav.length > 0 ? (
           productsFav.map((product, index) => (
             <ProductCard key={index} product={product} />
           ))

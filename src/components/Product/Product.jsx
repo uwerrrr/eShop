@@ -23,7 +23,6 @@ const Product = ({ product }) => {
 
   // name is undefined when first rendered
   const nameCap = name ? name.toUpperCase() : "";
-  console.log("isFavorite: ", isFavorite);
 
   const [love, setLove] = useState(isFavorite);
 

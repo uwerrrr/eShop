@@ -15,7 +15,6 @@ $carouseHeight: 40vh;
 
   position: relative;
 
-  border: 1px solid red;
 }
 
 .slide {
@@ -28,8 +27,12 @@ $carouseHeight: 40vh;
   object-fit: contain;
 
   margin: auto;
-  border: 1px solid red;
+
   position: absolute;
+
+  &__hidden {
+    display: none;
+  }
 
   &__img {
     width: $carouseWidth;
@@ -48,7 +51,12 @@ $arrowAlign: 20px;
   width: 2rem;
   height: 2rem;
   color: rgba(247, 247, 247, 0.752);
+  filter: drop-shadow(0px 0px 5px #555);
 
+  &:hover {
+    cursor: pointer;
+    color: white;
+  }
   &__left {
     left: $arrowAlign;
   }
@@ -65,7 +73,7 @@ $arrowAlign: 20px;
   &__btn {
     background-color: white;
     height: 5px;
-    width: 25px;
+    width: 3vw;
     border-radius: theme.$borderRadius;
     border: none;
     outline: none;
@@ -74,7 +82,7 @@ $arrowAlign: 20px;
     cursor: pointer;
 
     &--inactive {
-      background-color: grey;
+      background-color: rgba(196, 196, 196, 0.419);
     }
   }
 }
