@@ -26,10 +26,10 @@ const ProductList = ({ products, filter }) => {
             <ProductCard key={index} product={product} />
           ))
         ) : (
-          <>
+          <div>
             <p>There are no favourites</p>
             <p>Please add some favourites</p>
-          </>
+          </div>
         )}
       </div>
     </div>

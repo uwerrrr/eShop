@@ -1,1 +1,80 @@
 @use "../../styleSet/theme.scss";
+
+$carouseWidth: 70vw;
+$carouseHeight: 40vh;
+
+.carousel {
+  width: $carouseWidth;
+  height: $carouseHeight;
+
+  margin: 0 auto 10vh auto;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: relative;
+
+  border: 1px solid red;
+}
+
+.slide {
+  width: $carouseWidth;
+  height: $carouseHeight;
+  // background-color: theme.$almond;
+  border-radius: theme.$borderRadius;
+  box-shadow: 0px 0px 7px #666;
+
+  object-fit: contain;
+
+  margin: auto;
+  border: 1px solid red;
+  position: absolute;
+
+  &__img {
+    width: $carouseWidth;
+    height: $carouseHeight;
+    object-fit: cover;
+
+    border-radius: theme.$borderRadius;
+    // box-shadow: 0px 0px 7px #666;
+  }
+}
+
+$arrowAlign: 20px;
+.arrow {
+  position: absolute;
+  z-index: 50;
+  width: 2rem;
+  height: 2rem;
+  color: rgba(247, 247, 247, 0.752);
+
+  &__left {
+    left: $arrowAlign;
+  }
+  &__right {
+    right: $arrowAlign;
+  }
+}
+
+.indicators {
+  display: flex;
+  position: absolute;
+  bottom: 1rem;
+
+  &__btn {
+    background-color: white;
+    height: 5px;
+    width: 25px;
+    border-radius: theme.$borderRadius;
+    border: none;
+    outline: none;
+    box-shadow: 0px 0px 5px #555;
+    margin: 0 0.2rem;
+    cursor: pointer;
+
+    &--inactive {
+      background-color: grey;
+    }
+  }
+}
