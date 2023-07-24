@@ -6,6 +6,7 @@ import {
   faSquareCaretLeft,
 } from "@fortawesome/free-solid-svg-icons";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const Carousel = ({ products }) => {
   const productsFav = getFavProducts(products);
@@ -39,7 +40,6 @@ const Carousel = ({ products }) => {
       {/* slides */}
       {productsFav.map((painting, index) => {
         return (
-          //   className={slide === idx ? "slide" : "slide slide-hidden"}
           <div
             key={index}
             className={
@@ -48,12 +48,14 @@ const Carousel = ({ products }) => {
                 : `${style.slide} ${style.slide__hidden}`
             }
           >
-            <img
-              key={index}
-              src={painting.imageURL}
-              alt={painting.name}
-              className={style.slide__img}
-            ></img>
+            <Link to={`/products/${painting.id}`}>
+              <img
+                key={index}
+                src={painting.imageURL}
+                alt={painting.name}
+                className={style.slide__img}
+              ></img>
+            </Link>
           </div>
         );
       })}
