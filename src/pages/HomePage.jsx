@@ -11,7 +11,7 @@ const HomePage = () => {
   return (
     <>
       <Carousel products={paintings} />
-      <ProductList products={paintings} filter="all" />;
+      <ProductList products={paintings} filter="all" />
     </>
   );
 };

@@ -10,8 +10,26 @@ $headerHeight: 50px;
   margin-top: 10px;
   margin-bottom: 30px;
 }
+
+.left-section {
+  display: flex;
+  gap: 20px;
+}
+
 .link_wrapper {
   @include theme.linkWrapper();
+}
+.made-by {
+  font-size: 10px;
+  display: flex;
+  align-items: end;
+  gap: 2px;
+  &__link {
+    @include theme.linkWrapper();
+    &:hover {
+      border-bottom: 1px solid theme.$vermilion;
+    }
+  }
 }
 
 .page_name {
