@@ -1,0 +1,12 @@
+@use "../../../styleSet/theme.scss";
+
+.link {
+  @include theme.linkWrapper();
+  padding: 0 5px;
+  
+  &__active {
+    color: theme.$textWhite;
+    background-color: theme.$textMain;
+    // border-radius: theme.$borderRadius;
+  }
+}

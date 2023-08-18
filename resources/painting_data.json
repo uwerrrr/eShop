@@ -1,0 +1,203 @@
+[
+  {
+    "name": "Cypresses",
+    "year": 1889,
+    "painter": "Vincent van Gogh",
+    "imageURL": "https://www.vangoghgallery.com/catalog/image/0613/Cypresses.jpg",
+    "isFavorite": false,
+    "price": 2500,
+    "quantity": 2,
+    "description": "This painting depicts a cypress tree in a field. The tree is depicted in dark colors, and it stands out against the bright blue sky. The painting is characterized by its bold colors and its simple style. Van Gogh wanted to capture the beauty and power of nature, and he did so by using vibrant colors and a simple perspective."
+  },
+  {
+    "name": "Wheatfield with Crows",
+    "year": 1890,
+    "painter": "Vincent van Gogh",
+    "imageURL": "https://www.vangoghgallery.com/catalog/image/0779/Wheat-Field-with-Crows.jpg",
+    "isFavorite": false,
+    "price": 2000,
+    "quantity": 1,
+    "description": "This painting depicts a wheatfield with crows flying overhead. The painting is characterized by its dark colors and its ominous atmosphere. Van Gogh was deeply troubled at the time he painted this, and the painting is often seen as a premonition of his suicide."
+  },
+  {
+    "name": "Self-Portrait with Bandaged Ear",
+    "year": 1889,
+    "painter": "Vincent van Gogh",
+    "imageURL": "https://www.vangoghgallery.com/catalog/image/0527/Self-Portrait-with-Bandaged-Ear.jpg",
+    "isFavorite": false,
+    "price": 1800,
+    "quantity": 2,
+    "description": "This painting is a self-portrait of Van Gogh. He is depicted with his ear bandaged, which he had cut off in a fit of madness. The painting is characterized by its dark colors, its intense expression, and its sense of foreboding. Van Gogh's self-portraits are often seen as a way for him to explore his own identity and his inner turmoil. The painting is a powerful image of the artist's struggle with his mental health."
+  },
+  {
+    "name": "Irises",
+    "year": 1889,
+    "painter": "Vincent van Gogh",
+    "imageURL": "https://www.vangoghgallery.com/catalog/image/0608/Irises.jpg",
+    "isFavorite": false,
+    "price": 1700,
+    "quantity": 3,
+    "description": "This painting depicts a field of irises. The painting is characterized by its bright colors, its flowing brushstrokes, and its sense of movement. Van Gogh was fascinated by the beauty of nature, and he often used flowers as a subject in his paintings. The painting is a celebration of the beauty of the natural world."
+  },
+  {
+    "name": "Self-Portrait with Straw Hat",
+    "year": 1887,
+    "painter": "Vincent van Gogh",
+    "imageURL": "https://www.vangoghgallery.com/catalog/image/0469/Self-Portrait-with-Straw-Hat.jpg",
+    "isFavorite": false,
+    "price": 1800,
+    "quantity": 2,
+    "description": "This painting is a self-portrait of Van Gogh. He is depicted wearing a straw hat and a blue jacket. The painting is characterized by its bold colors and its thick brushstrokes. Van Gogh's self-portraits are often seen as a way for him to explore his own identity and his inner turmoil."
+  },
+  {
+    "name": "The Starry Night",
+    "year": 1889,
+    "painter": "Vincent van Gogh",
+    "imageURL": "https://www.vangoghgallery.com/catalog/image/0612/Starry-Night.jpg",
+    "isFavorite": true,
+    "price": 2500,
+    "quantity": 4,
+    "description": "This painting depicts the view from the east-facing window of his asylum room at Saint-Rémy-de-Provence, just before sunrise, with the addition of an imagined village. The cypresses, which he associated with death, frame the village, and the swirling clouds suggest the artist's inner turmoil."
+  },
+  {
+    "name": "The Bedroom",
+    "year": 1888,
+    "painter": "Vincent van Gogh",
+    "imageURL": "https://iiif.micr.io/ZKSPH/full/1280,/0/default.jpg",
+    "isFavorite": false,
+    "price": 2100,
+    "quantity": 1,
+    "description": "This painting depicts the bedroom of Van Gogh's apartment in Arles. The painting is characterized by its simple colors and its flat perspective. Van Gogh wanted to create a sense of calm and tranquility, and he did so by using muted colors and a simple perspective."
+  },
+  {
+    "name": "The Potato Eaters",
+    "year": 1885,
+    "painter": "Vincent van Gogh",
+    "imageURL": "https://upload.wikimedia.org/wikipedia/commons/b/b1/Van-willem-vincent-gogh-die-kartoffelesser-03850.jpg",
+    "isFavorite": false,
+    "price": 1200,
+    "quantity": 1,
+    "description": "This painting depicts a peasant family eating potatoes. The painting is characterized by its dark colors and its simple style. Van Gogh wanted to depict the harsh reality of peasant life, and he did so by using thick brushstrokes and earthy colors."
+  },
+  {
+    "name": "Sunflowers",
+    "year": 1889,
+    "painter": "Vincent van Gogh",
+    "imageURL": "https://iiif.micr.io/TZCqF/full/1280,/0/default.jpg",
+    "isFavorite": true,
+    "price": 2000,
+    "quantity": 2,
+    "description": "This is one of a series of paintings of sunflowers that Van Gogh created in Arles in 1889. The sunflowers are depicted in a vase, and the background is a simple yellow. The painting is characterized by its bold colors and its thick brushstrokes."
+  },
+  {
+    "name": "Apple Blossoms",
+    "year": 1888,
+    "painter": "Vincent van Gogh",
+    "imageURL": "https://www.vangoghgallery.com/catalog/image/0482/Apple-Blossoms.jpg",
+    "isFavorite": false,
+    "price": 1500,
+    "quantity": 1,
+    "description": "This painting depicts a vase of apple blossoms. The painting is characterized by its bright colors and its simple style. Van Gogh wanted to capture the beauty of springtime, and he did so by using vibrant colors and a simple composition."
+  },
+  {
+    "name": "Almond Blossom",
+    "year": 1890,
+    "painter": "Vincent van Gogh",
+    "imageURL": "https://www.vangoghgallery.com/catalog/image/0671/Blossoming-Almond-Tree.jpg",
+    "isFavorite": false,
+    "price": 1900,
+    "quantity": 3,
+    "description": "This painting depicts a blossoming almond tree. The painting is characterized by its soft colors, its delicate brushstrokes, and its sense of hope and renewal. Van Gogh painted this painting in the spring of 1890, and it is often seen as a symbol of new beginnings."
+  },
+  {
+    "name": "Still Life: Vase with Twelve Sunflowers",
+    "year": 1889,
+    "painter": "Vincent van Gogh",
+    "imageURL": "https://www.vangoghgallery.com/catalog/image/0610/Still-Life-Vase-with-Twelve-Sunflowers.jpg",
+    "isFavorite": false,
+    "price": 1700,
+    "quantity": 3,
+    "description": "This painting depicts a vase of sunflowers. The painting is characterized by its bold colors and its thick brushstrokes. Van Gogh wanted to capture the beauty and vitality of the sunflowers, and he did so by using vibrant colors and a dynamic composition."
+  },
+  {
+    "name": "Sunflowers in a Vase",
+    "year": 1889,
+    "painter": "Vincent van Gogh",
+    "imageURL": "https://www.vangoghgallery.com/catalog/image/0528/Sunflowers-in-a-Vase.jpg",
+    "isFavorite": false,
+    "price": 1800,
+    "quantity": 1,
+    "description": "This painting depicts a vase of sunflowers. The painting is characterized by its bold colors and its thick brushstrokes. Van Gogh wanted to capture the beauty and vitality of the sunflowers, and he did so by using vibrant colors and a dynamic composition."
+  },
+
+  {
+    "name": "Field with Poppies",
+    "year": 1889,
+    "painter": "Vincent van Gogh",
+    "imageURL": "https://www.vangoghgallery.com/catalog/image/0609/Field-with-Poppies.jpg",
+    "isFavorite": false,
+    "price": 2200,
+    "quantity": 5,
+    "description": "This painting depicts a field of poppies. The painting is characterized by its vibrant colors and its simple style. Van Gogh wanted to capture the beauty of the natural world, and he did so by using bold colors and a simple composition."
+  },
+  {
+    "name": "Cafe Terrace at Night",
+    "year": 1888,
+    "painter": "Vincent van Gogh",
+    "imageURL": "https://www.vangoghgallery.com/catalog/image/0529/Cafe-Terrace-at-Night.jpg",
+    "isFavorite": true,
+    "price": 2000,
+    "quantity": 1,
+    "description": "This painting depicts a cafe terrace at night in Arles. The painting is characterized by its bold colors and its dynamic composition. Van Gogh wanted to capture the vibrant atmosphere of the cafe, and he did so by using vibrant colors and a swirling brushstrokes."
+  },
+  {
+    "name": "The Church at Auvers-sur-Oise",
+    "year": 1890,
+    "painter": "Vincent van Gogh",
+    "imageURL": "data:image/jpeg;base64,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",
+    "isFavorite": false,
+    "price": 1900,
+    "quantity": 1,
+    "description": "This painting depicts the Church of Auvers-sur-Oise in France. The painting is characterized by its bold colors and its simple style. Van Gogh wanted to capture the beauty of the church, and he did so by using vibrant colors and a simple composition."
+  },
+  {
+    "name": "The Yellow House",
+    "year": 1888,
+    "painter": "Vincent van Gogh",
+    "imageURL": "https://www.vangoghgallery.com/catalog/image/0472/The-Yellow-House.jpg",
+    "isFavorite": false,
+    "price": 2300,
+    "quantity": 1,
+    "description": "This painting depicts the Yellow House, which Van Gogh rented in Arles, France. The painting is characterized by its bright yellow colors and its simple style. Van Gogh wanted to create a warm and inviting home, and he did so by using vibrant colors and a simple composition."
+  },
+  {
+    "name": "The Postman Joseph Roulin",
+    "year": 1889,
+    "painter": "Vincent van Gogh",
+    "imageURL": "https://www.vangoghgallery.com/catalog/image/0490/The-Postman-Joseph-Roulin.jpg",
+    "isFavorite": false,
+    "price": 1600,
+    "quantity": 1,
+    "description": "This painting depicts the postman Joseph Roulin, who was a good friend of Van Gogh's. The painting is characterized by its bold colors and its simple style. Van Gogh wanted to capture the essence of Roulin's character, and he did so by using vibrant colors and a simple composition."
+  },
+  {
+    "name": "Bedroom in Arles",
+    "year": 1888,
+    "painter": "Vincent van Gogh",
+    "imageURL": "https://www.vangoghgallery.com/catalog/image/0526/Bedroom-in-Arles.jpg",
+    "isFavorite": false,
+    "price": 2400,
+    "quantity": 1,
+    "description": "This painting depicts Van Gogh's bedroom in Arles. The painting is characterized by its simple colors and its flat perspective. Van Gogh wanted to create a sense of calm and tranquility, and he did so by using muted colors and a simple perspective."
+  },
+  {
+    "name": "The Sower",
+    "year": 1888,
+    "painter": "Vincent van Gogh",
+    "imageURL": "https://www.vangoghgallery.com/catalog/image/0486/The-Sower.jpg",
+    "isFavorite": false,
+    "price": 1500,
+    "quantity": 1,
+    "description": "This painting depicts a sower, a farmer who sows seeds in the field. The painting is characterized by its bold colors and its simple style. Van Gogh wanted to capture the beauty of nature and the cycle of life, and he did so by using vibrant colors and a simple composition."
+  }
+]

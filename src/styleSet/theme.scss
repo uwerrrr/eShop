@@ -1,0 +1,32 @@
+$almond: #f4e1cd;
+$cambridgeBlue: #90b8b3;
+$azure: #deeae9;
+$vermilion: #e04834;
+$cinereous: #8b786d;
+$erieBlack: #1c1e1f;
+$lavender: #dfe2ec;
+$seaSalt: #fafafa;
+
+$textMain: $erieBlack;
+$textSub: $cinereous;
+$textWhite: $seaSalt;
+
+$borderRadius: 16px;
+
+// link
+@mixin linkWrapper() {
+  text-decoration: none;
+  color: $textMain;
+}
+
+// btn
+@mixin btnWrapper() {
+  background-color: transparent;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  outline: none;
+  padding: 0;
+  color: $textMain;
+}

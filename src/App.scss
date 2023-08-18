@@ -1,0 +1,21 @@
+@use "./styleSet/theme.scss";
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+body {
+  max-width: 90%;
+  // min-height: 100%;
+  margin: 0 auto 70px auto;
+  background: linear-gradient(to bottom right, theme.$lavender, theme.$almond);
+
+  // font-family: "Nunito Sans", sans-serif;
+}
+#root {
+  margin: 0 auto;
+  padding: 0;
+  // text-align: center;
+  min-height: 100vh;
+  font-family: "Roboto", sans-serif;
+
+  color: theme.$textMain;
+}

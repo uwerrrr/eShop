@@ -1,0 +1,88 @@
+@use "../../styleSet/theme.scss";
+
+$carouseWidth: 70vw;
+$carouseHeight: 40vh;
+
+.carousel {
+  width: $carouseWidth;
+  height: $carouseHeight;
+
+  margin: 0 auto 10vh auto;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: relative;
+
+}
+
+.slide {
+  width: $carouseWidth;
+  height: $carouseHeight;
+  // background-color: theme.$almond;
+  border-radius: theme.$borderRadius;
+  box-shadow: 0px 0px 7px #666;
+
+  object-fit: contain;
+
+  margin: auto;
+
+  position: absolute;
+
+  &__hidden {
+    display: none;
+  }
+
+  &__img {
+    width: $carouseWidth;
+    height: $carouseHeight;
+    object-fit: cover;
+
+    border-radius: theme.$borderRadius;
+    // box-shadow: 0px 0px 7px #666;
+  }
+}
+
+$arrowAlign: 20px;
+.arrow {
+  position: absolute;
+  z-index: 50;
+  width: 2rem;
+  height: 2rem;
+  color: rgba(247, 247, 247, 0.752);
+  filter: drop-shadow(0px 0px 5px #555);
+
+  &:hover {
+    cursor: pointer;
+    color: white;
+  }
+  &__left {
+    left: $arrowAlign;
+  }
+  &__right {
+    right: $arrowAlign;
+  }
+}
+
+.indicators {
+  display: flex;
+  position: absolute;
+  bottom: 1rem;
+
+  &__btn {
+    background-color: white;
+    height: 5px;
+    width: 3vw;
+    border-radius: theme.$borderRadius;
+    border: none;
+    outline: none;
+    box-shadow: 0px 0px 5px #555;
+    margin: 0 0.2rem;
+    cursor: pointer;
+
+    &--inactive {
+      background-color: rgba(196, 196, 196, 0.419);
+    }
+  }
+}
